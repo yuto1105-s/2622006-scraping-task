@@ -2,6 +2,8 @@
 
 DS Programming（2026年10月21日）の個別課題。学籍番号：2622006。
 
+このリポジトリでは収集コードと実行手順を提供する。CSVと取得ログは`python scrape.py`を実行すると生成される。
+
 ## 課題の処理
 
 1. `https://www.musashino-u.ac.jp/` にアクセスする。
@@ -46,13 +48,13 @@ Ctrl+Cで中断しても保存され、同じコマンドで再開できる。
 | ファイル | 内容 |
 | --- | --- |
 | `scrape.py` | 巡回・辞書への格納・CSV保存 |
-| `sitemap.csv` | 実際の取得結果 |
-| `crawl_errors.json` | 取得失敗・除外の記録 |
+| `sitemap.csv` | 実行時に生成される取得結果 |
+| `crawl_errors.json` | 実行時に生成される取得失敗・除外の記録 |
 | `requirements.txt` | 依存ライブラリ |
 | `abe.py` | 元からあった授業用ファイル |
 
 ## GitHub Flow
 
-`main`から`feature/sitemap-crawler`を作成し、作業ブランチで実装・結果をコミットする。
+`main`から`feature/sitemap-crawler`を作成し、作業ブランチでコードと説明をコミットする。
 作業ブランチをPushし、Pull Requestで変更を確認してから`main`へマージする。
 提出時はこのPublicリポジトリのURLをGoogle Classroomに登録する。
